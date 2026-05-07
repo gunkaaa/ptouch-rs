@@ -123,7 +123,9 @@ static DEVICE_TABLE: &[DeviceInfo] = &[
         name: "PT-7600",
         max_px: 128,
         dpi: 180,
-        flags: DeviceFlags::RASTER_PACKBITS.union(DeviceFlags::P700_INIT),
+        flags: DeviceFlags::USE_INFO_CMD
+            .union(DeviceFlags::HAS_PRECUT)
+            .union(DeviceFlags::D460BT_MAGIC),
     },
     DeviceInfo {
         vid: 0x04f9,
