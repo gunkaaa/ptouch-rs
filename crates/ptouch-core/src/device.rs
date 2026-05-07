@@ -119,6 +119,14 @@ static DEVICE_TABLE: &[DeviceInfo] = &[
     },
     DeviceInfo {
         vid: 0x04f9,
+        pid: 0x202b,
+        name: "PT-7600",
+        max_px: 128,
+        dpi: 180,
+        flags: DeviceFlags::NONE,
+    },
+    DeviceInfo {
+        vid: 0x04f9,
         pid: 0x202c,
         name: "PT-1230PC",
         max_px: 128,
